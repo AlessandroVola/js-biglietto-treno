@@ -9,11 +9,11 @@ console.log(prezzoBigliettoNormale)
 var etaUtente = parseInt(prompt("Quanti anni hai?"))
 
 if (etaUtente < 18) {
-    document.getElementById("biglietto_treno").innerHTML = "Il tuo biglietto costa " + ((prezzoBigliettoNormale / 100) * 80) + " euro"
+    document.getElementById("biglietto_treno").innerHTML = "Il tuo biglietto costa " + ((prezzoBigliettoNormale / 100) * 80).toFixed(2) + " euro"
 }
 else if (etaUtente > 65) {
-    document.getElementById("biglietto_treno").innerHTML = "Il tuo biglietto costa " + ((prezzoBigliettoNormale / 100) * 60) + " euro"
+    document.getElementById("biglietto_treno").innerHTML = "Il tuo biglietto costa " + ((prezzoBigliettoNormale / 100) * 60).toFixed(2) + " euro"
 }
 else {
-    document.getElementById("biglietto_treno").innerHTML = "Il tuo biglietto costa " + prezzoBigliettoNormale + " euro"
+    document.getElementById("biglietto_treno").innerHTML = "Il tuo biglietto costa " + prezzoBigliettoNormale.toFixed(2) + " euro"
 }
